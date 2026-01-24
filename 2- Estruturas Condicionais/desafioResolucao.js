@@ -15,19 +15,19 @@ const gasolinePrice = 6.66;
 let carFuelType = 'gasolina';
 let fuelConsumption = 10;
 let tripDistance = 387;
-let tirpTotalCost = 0
+let tirpTotalCost = 0;
 
 if (carFuelType === 'etanol') {
-    tirpTotalCost = (tripDistance / fuelConsumption) * etanolPrice
+    tirpTotalCost = (tripDistance / fuelConsumption) * etanolPrice;
 } else if (carFuelType === 'gasolina') {
-    tirpTotalCost = (tripDistance / fuelConsumption) * gasolinePrice
+    tirpTotalCost = (tripDistance / fuelConsumption) * gasolinePrice;
 } else {
-    console.log('Combustível inválido')
+    console.log('Combustível inválido');
 }
 
 if (tirpTotalCost === 0) {
-    console.log('Não foi possível calcular o gasto total pois há valores inválidos')
+    console.log('Não foi possível calcular o gasto total pois há valores inválidos');
 } else {
-    console.log(tirpTotalCost.toFixed(2))
+    console.log(tirpTotalCost.toFixed(2));
 }
 
