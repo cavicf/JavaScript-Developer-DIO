@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro html</h1>
+    <p>Hello World</p>
+    <button type="button" id="first-button">CLique aqui</button> <!-- é importante definir o type button pq se não ele fica como submit por padrão e sempre q for usado ele vai recarregar a pagina toda, oq não queremos, então deixamos claro o tipo button e q ele receberá uma ação a parte -->
+
+
+
+    <script>
+        const buttonReference = document.getElementById('first-button');
+        buttonReference.addEventListener('click', function(){ //o addEventListener cria uma escuta de evento, onde informamos a qual evento vamos reagir e como vamos reagir, no caso usamos uma função que executa algo para ser essa reação
+            console.log('clicou no botão')
+        })
+    </script>
+</body>
+</html>
+
+<!-- O html é uma linguagem de marcação que é usada para estruturar paginas web, dando significado semantico para nossos textos, permitindo que os motores de busca possam indexar
+nosso conteudo e apresentá-lo aos usuarios, indetificando o contexto da nossa página. -->
+
+<!-- O CSS serve para trazer estilização as nossas marcações de html, trazendo o aspecto visual. -->
+
+<!-- O JavaScript no contexto da web é o que da comportamento para nossas aplicações e paginas, ele cuida da lógica e ações que a pagina é capaz de realizar -->
